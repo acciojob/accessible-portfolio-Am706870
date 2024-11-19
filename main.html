@@ -3,22 +3,36 @@
 <html>
 
 <head>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
-	<title>The new task begin</title>
 </head>
 
 <body>
-	<h1>The New Task</h1>
-	<nav>
-		This is a nav bar
-	</nav>
-	<img src="/wp-content/uploads/flamingo.jpg"  alt=" ">
-	<p>this the first quite a task</p>
-	<ul>
-		<li>1st item</li>
-		<li>2nd item</li>
-		<li>3rd item</li>
-	</ul>
+	 <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img src="profile.jpg" alt="A professional photo of the portfolio owner" role="img">
+        <p>This is a brief description of who I am and my professional background. I specialize in web development, focusing on accessibility and user-friendly design.</p>
+    </section>
+
+    <section id="projects">
+        <h2 role="heading">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Application</li>
+            <li role="listitem">Project 2: Interactive Portfolio</li>
+            <li role="listitem">Project 3: E-commerce Website</li>
+        </ul>
+    </section>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
